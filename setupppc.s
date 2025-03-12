@@ -226,7 +226,7 @@ _getL2Size:
         mr      r8,r5
         lis     r4,0
 
-        subis   r6,r6,0x40              #Substract 4 MB
+        subis   r6,r6,0x40              #Subtract 4 MB
         lis     r5,L2_SIZE_1M_U         #Size of memory to write to
 
 .L2SzWriteLoop:

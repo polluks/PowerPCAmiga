@@ -375,7 +375,7 @@ UWORD                       nt_Pad2;
 struct MsgPortPPC           nt_Port;
 ULONG                       nt_SSReserved1[8];  //Belongs to Semaphore of nt_Port
 struct MsgPortPPC           nt_IntPort;         //Currently not used or set-up. Also removed from functions atm.
-ULONG                       nt_SSReserved2[8];  //Belongs to Sempahore of nt_IntPort
+ULONG                       nt_SSReserved2[8];  //Belongs to Semaphore of nt_IntPort
 struct BATArray             nt_BatStore[4];
 UBYTE                       nt_Name[256];
 };

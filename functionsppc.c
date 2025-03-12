@@ -3852,7 +3852,7 @@ PPCFUNCTION APTR myRawDoFmtPPC(__reg("r3") struct PrivatePPCBase* PowerPCBase, _
                     MakeDecimal(&rdfData, TRUE, AdjustParam(&rdfData, flag));
                     goto FmtOutput;
                 }
-                case 'x':    //type->hexidecimal number
+                case 'x':    //type->hexadecimal number
                 case 'X':
                 {
                     MakeHex(&rdfData, flag, AdjustParam(&rdfData, flag));

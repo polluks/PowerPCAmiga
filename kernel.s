@@ -149,7 +149,7 @@ _StoreFrame:
         lwz     r0,0(r1)
         stwu    r0,12(r3)                    #r1, skipped r0
         stwu    r2,4(r3)
-        stwu    r5,12(r3)                    #skipped r3 and r4. Need to be stored seperately
+        stwu    r5,12(r3)                    #skipped r3 and r4. Need to be stored separately
         stwu    r6,4(r3)
         stwu    r7,4(r3)
         stwu    r8,4(r3)
@@ -378,8 +378,8 @@ _LoadFrame:
         lfd     f0,0(r31)
         mtfsf   0xff,f0
 
-        lwzu    r2,16(r31)                   #skip r0-r1, is loaded seperately
-        lwzu    r4,8(r31)                    #skip r3, is loaded seperately
+        lwzu    r2,16(r31)                   #skip r0-r1, is loaded separately
+        lwzu    r4,8(r31)                    #skip r3, is loaded separately
         lwzu    r5,4(r31)
         lwzu    r6,4(r31)
         lwzu    r7,4(r31)

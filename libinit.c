@@ -2006,7 +2006,7 @@ struct InitData* SetupMPC107(struct InternalConsts* myConsts, ULONG devfuncnum,
 
     D(("Fake ROM address located at %08lx\n", romMem));
 
-    D(("Confguration base of MPC107 located at %08lx\n", EUMBAddr));
+    D(("Configuration base of MPC107 located at %08lx\n", EUMBAddr));
 
     writememL(EUMBAddr, MPC107_OTWR, swap32((romMem - offset) | MPC107_TWR_64KB));
     writememL(EUMBAddr, MPC107_OMBAR, 0x0000f0ff);
@@ -2138,7 +2138,7 @@ struct InitData* SetupMPC107(struct InternalConsts* myConsts, ULONG devfuncnum,
 
 /********************************************************************************************
 *
-*	Routines for ouputting error messages.
+*	Routines for outputting error messages.
 *
 *********************************************************************************************/
 
